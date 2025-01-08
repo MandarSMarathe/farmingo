@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmingo |Login</title>
+    <link rel="stylesheet" href="css/login_final.css" />
+    <style>
+      body {
+        background-image: url("images/bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="google_translate_element" style="margin: 40px"></div>
+    <div class="Login-Page">
+      <div class="container">
+        <form action="/loginFarmer" method="POST" id="loginForm" class="form">
+            <div class="form">
+              <div class="image">
+                <img src="images/download (3).jpeg" width="50%" height="50%" />
+              </div>
+              <div class="content">
+                <h2>Login as Farmer</h2>
+                <p>Please enter your credentials to login</p>
+              </div>
+              <br />
+              <div class="input">
+                <input type="text" name="name" id="name" placeholder="Username" />
+                <br />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="password"
+                />
+              </div>
+              <div class="login-btn">
+                <button type="submit">Login</button>
+              </div>
+          </div >  
+                
+                <p class="message">
+                  Not registered? <a href="/register">Create an account</a>
+                </p>
+                <p class="message"><a href="#">Forget Password</a></p>
+                <br />
+                <br />
+                <p>Click here to login as Customer</p>
+                <h3 class="title tag-line">
+                  <a href="login_cmst.html">Login as Customer</a>
+                  <br>
+                  <br><a href="index.html">Back To Home Page</a></p>
+                </h3>
+              </div>
+              </div> 
+            
+         </form>  
+        
+   
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+  </body>
+</html>

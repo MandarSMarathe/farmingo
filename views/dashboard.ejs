@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Farmer Dashboard</h1>
+    </header>
+    <main>
+        <h2>Add Crop Details</h2>
+        <!-- Form to upload crop details -->
+        <form id="cropForm" enctype="multipart/form-data" action="/farmer/upload" method="POST">
+            <input type="file" name="image" required>
+            <input type="text" name="name" placeholder="Crop Name" required>
+            <input type="number" name="rate" placeholder="Rate (per unit)" required>
+            <input type="number" name="quantity" placeholder="Quantity" required>
+            <button type="submit">Upload Crop</button>
+        </form>
+    </main>
+    <footer>
+        <a href="/logout">Logout</a>
+    </footer>
+</body>
+</html>

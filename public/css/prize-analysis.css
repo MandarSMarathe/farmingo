@@ -1,0 +1,58 @@
+.lower {
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #aedc52;
+}
+a {
+  color: #004651;
+}
+.grid-container {
+  -moz-columns: 5 200px;
+  columns: 5 200px;
+  -moz-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+.grid-container div {
+  width: 150px;
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  width: 100%;
+  border: solid 2px black;
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.grid-container div:hover img {
+  filter: grayscale(0);
+}
+.grid-container div:hover {
+  border-color: #aedc52;
+}
+.grid-container div img {
+  width: 100%;
+  filter: grayscale(40%);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.grid-container div p {
+  margin: 5px 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+} /*# sourceMappingURL=prize-analysis.css.map */
+.btn-success {
+  background-color: #aedc52;
+  width: 15rem;
+  height: 4rem;
+  border: none;
+  border-radius: 15px;
+  margin-top: 3rem;
+}

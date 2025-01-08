@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Crops</title>
+    <!-- <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/prize-analysis.css" /> -->
+    <link rel="stylesheet" href="css/shop2.css" />
+    <style>
+        body {
+          background-image: url("images/bg.jpg");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Available Crops</h1>
+    </header>
+    <main>
+        <!-- <ul>
+            <% crops.forEach(crop => { %>
+                <li>
+                    <img src="/uploads/<%= crop.image %>" alt="<%= crop.name %>">
+                    <h2><%= crop.name %></h2>
+                    <p>Rate: <%= crop.rate %> per unit</p>
+                    <p>Quantity: <%= crop.quantity %></p>
+                    <button onclick="buyCrop('<%= crop._id %>')">Buy</button>
+                </li>
+            <% }); %>
+        </ul> -->
+
+        <div class="container">
+            <% crops.forEach(crop => { %>
+            <div class="card">
+                <div class="image">
+                    <img src="/uploads/<%= crop.image %>" height="200px" width="200px" alt="<%= crop.name %>">
+                </div>
+                <div class="cost">
+                <p style="text-decoration: line-through">Rate: <%= crop.rate %> per unit</p>
+                <p>Quantity: <%= crop.quantity %></p>
+                </div>
+                <div class="shopbtn">
+                    <button class="shopNow" onclick="buyCrop('<%= crop._id %>')">Buy</button>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+
+
+    </main>
+    <footer>
+        <!-- <a class="cost" href="/logout">Logout</a> -->
+    </footer>
+    <script>
+        function buyCrop(cropId) {
+            // Implement logic to buy crop
+            alert('Crop bought successfully!');
+        }
+    </script>
+</body>
+</html>
